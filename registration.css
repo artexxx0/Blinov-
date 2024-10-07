@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+
+  }
+  
+  header {
+    background-color: #343a40;
+    padding: 10px 0;
+  }
+  
+  header .navbar-brand img {
+    max-height: 50px;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Стилі для форми реєстрації */
+  .registration-form {
+    background-color: #ff89ca;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .registration-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+  
+  .registration-form .cart-btn {
+    background-color: #df2d8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .registration-form .cart-btn:hover {
+    background-color: #710d53;
+  }
+  
+  /* Відступи між полями */
+  .registration-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Кнопка зміни теми */
+  #themeToggle {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Мобільні стилі */
+  @media (max-width: 768px) {
+    .registration-form {
+      padding: 15px;
+    }
+  }
+  .error {
+    border-color: red;
+  }
+  
+
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+    position: relative;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  footer .bi {
+    font-size: 18px;
+    color: white;
+  }
+  
