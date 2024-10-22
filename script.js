@@ -10,3 +10,6 @@ if (registerBtn) {
         window.location.assign('registration.html');
     });
 }
+document.getElementById('toggle').addEventListener('change', function() {
+    document.body.classList.toggle('dark-theme', this.checked);
+  });

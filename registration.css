@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
@@ -17,6 +17,7 @@ body {
   
   main {
     margin-top: 20px;
+    font-family: Arial, sans-serif;
   }
   
   h2 {
@@ -25,12 +26,14 @@ body {
     text-align: center;
   }
   
+
   /* Стилі для форми реєстрації */
   .registration-form {
-    background-color: #ff89ca;
+    background-color:  rgb(3, 49, 49);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: white;
   }
   
   .registration-form .form-control {
@@ -44,11 +47,11 @@ body {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-    color: #555;
+    color: #ffffff;
   }
   
   .registration-form .cart-btn {
-    background-color: #df2d8f;
+    background-color: rgb(6, 95, 95);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -60,7 +63,8 @@ body {
   }
   
   .registration-form .cart-btn:hover {
-    background-color: #710d53;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px grey;
   }
   
   /* Відступи між полями */

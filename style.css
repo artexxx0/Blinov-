@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 body{
     font-family: "Great Vibes", cursive;
+    background-color: rgb(255, 255, 255);
 }
 nav{
     background-color: rgb(3, 49, 49);
@@ -57,25 +59,211 @@ nav img{
     text-align: center;
     text-shadow: 1px 1px 5px black;
 }
-
-.carousel-own{
-    width: 500px;
-    height: 500px;
-    border-radius: 30px;
+.carousel-section {
+    width: 375px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 
-.carousel-own img{
-    width: 500px;
-    height: 500px;
-    border-radius: 30px;
+.carousel-section-2{
+    width: 650px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 100px;
 }
 
-.carousel-section{
+
+
+.carousel-inner img {
+    width: 375px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.stars {
+    object-fit: contain;
+    width: 120px !important;
+    height: 12px !important;
+    -webkit-text-stroke: 1px white;
+}
+
+
+
+.first_text{
+    -webkit-text-stroke: 0.1px black;
+    color: rgb(255, 198, 9);
+    font-size: 30px;
+    text-shadow: 2px 2px 2px white;
+}
+
+
+.big-section {
     display: flex;
-    justify-content: center;
-    background-color: rgb(207, 212, 253);
-    flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    background-color: #a5a2a2;
+    justify-content: space-between;
+    padding: 5px;
+  }
+ 
+  .text-container {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .text-container p{
+    font-size: 30px;
+    font-family:"Caveat", cursive;
+  }
+
+.shop-now{
+    padding: 5px 25px;
+    font-size: 30px;
+    border-radius: 25px;
+}
+
+.shop-now:hover{
+    background-color: rgb(3, 49, 49);
+    box-shadow: 0px 0px 5px 5px white;
+    color: #fff;
+    transition: 1s;
+}
+
+.registration-icon{
+    padding: 5px 25px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.registration-icon:hover{
+    background-color: rgb(3, 49, 49);
+    box-shadow: 0px 0px 5px 5px white;
+    color: #fff;
+    transition: 1s;
+}
+.new-text{
+    color: #ffffff;
+    font-family:"Caveat", cursive;
+    font-size: 30px;
+}
+
+footer{
+    background-color: rgb(0, 81, 81);
+    display: flex;
+    font-size: 40px;
+    justify-content: space-evenly;
+}
+
+#theme-toggle-button {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 7em;
+    cursor: pointer;
+  }
+  
+  /* Hide default HTML checkbox */
+  #toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  #container,
+  #patches,
+  #stars,
+  #button,
+  #sun,
+  #moon,
+  #cloud {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
+  }
+  
+  /* night sky background */
+  #toggle:checked + svg #container {
+    fill: #2b4360;
+  }
+  
+  /* move button to right when checked */
+  #toggle:checked + svg #button {
+    transform: translate(28px, 2.333px);
+  }
+  
+  /* show/hide sun and moon based on checkbox state */
+  #sun {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #sun {
+    opacity: 0;
+  }
+  
+  #moon {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #moon {
+    opacity: 1;
+  }
+  
+  /* show or hide background items on checkbox state */
+  #cloud {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #cloud {
+    opacity: 0;
+  }
+  
+  #stars {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #stars {
+    opacity: 1;
+  }
+  ul{
+    list-style: none;
+  }
+  
+.dropdown-menu{
+  background-color:  rgb(12, 159, 159);
+  font-size: 25px;
+}
+/* Темная тема*/
+body.dark-theme {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+
+body.dark-theme .big-section {
+  background-color: #000000;
+}
+
+body.dark-theme h1 {
+  color: white;
+}
+
+body.dark-theme h2 {
+  color: white;
+}
+
+#theme-toggle-button {
+  cursor: pointer;
+}
+
+#toggle {
+  display: none;
+}
+
+.nav-link-own-1:hover{
+    color: #303233;
+    text-shadow: 2px 2px 5px white;
 }
